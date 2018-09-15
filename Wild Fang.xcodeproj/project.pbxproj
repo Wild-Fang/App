@@ -12,6 +12,9 @@
 		68D5BAF9214CD8E40053B5B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68D5BAF7214CD8E40053B5B5 /* Main.storyboard */; };
 		68D5BAFB214CD8E60053B5B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68D5BAFA214CD8E60053B5B5 /* Assets.xcassets */; };
 		68D5BAFE214CD8E60053B5B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68D5BAFC214CD8E60053B5B5 /* LaunchScreen.storyboard */; };
+		68D5BB0A214CDE7F0053B5B5 /* AVCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BB09214CDE7F0053B5B5 /* AVCapture.swift */; };
+		68D5BB0C214D394E0053B5B5 /* AVSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BB0B214D394E0053B5B5 /* AVSetup.swift */; };
+		68D5BB0E214D399A0053B5B5 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BB0D214D399A0053B5B5 /* SqueezeNet.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,10 @@
 		68D5BAFA214CD8E60053B5B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68D5BAFD214CD8E60053B5B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68D5BAFF214CD8E60053B5B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68D5BB06214CD9BB0053B5B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		68D5BB09214CDE7F0053B5B5 /* AVCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCapture.swift; sourceTree = "<group>"; };
+		68D5BB0B214D394E0053B5B5 /* AVSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVSetup.swift; sourceTree = "<group>"; };
+		68D5BB0D214D399A0053B5B5 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +61,33 @@
 		68D5BAF2214CD8E40053B5B5 /* Wild Fang */ = {
 			isa = PBXGroup;
 			children = (
+				68D5BB07214CDE570053B5B5 /* Controllers */,
 				68D5BAF3214CD8E40053B5B5 /* AppDelegate.swift */,
-				68D5BAF5214CD8E40053B5B5 /* ViewController.swift */,
 				68D5BAF7214CD8E40053B5B5 /* Main.storyboard */,
 				68D5BAFA214CD8E60053B5B5 /* Assets.xcassets */,
 				68D5BAFC214CD8E60053B5B5 /* LaunchScreen.storyboard */,
 				68D5BAFF214CD8E60053B5B5 /* Info.plist */,
+				68D5BB0D214D399A0053B5B5 /* SqueezeNet.mlmodel */,
 			);
 			path = "Wild Fang";
+			sourceTree = "<group>";
+		};
+		68D5BB07214CDE570053B5B5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				68D5BB08214CDE670053B5B5 /* Extensions */,
+				68D5BAF5214CD8E40053B5B5 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		68D5BB08214CDE670053B5B5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				68D5BB09214CDE7F0053B5B5 /* AVCapture.swift */,
+				68D5BB0B214D394E0053B5B5 /* AVSetup.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +161,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68D5BB0C214D394E0053B5B5 /* AVSetup.swift in Sources */,
 				68D5BAF6214CD8E40053B5B5 /* ViewController.swift in Sources */,
+				68D5BB0E214D399A0053B5B5 /* SqueezeNet.mlmodel in Sources */,
+				68D5BB0A214CDE7F0053B5B5 /* AVCapture.swift in Sources */,
 				68D5BAF4214CD8E40053B5B5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,6 +176,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				68D5BAF8214CD8E40053B5B5 /* Base */,
+				68D5BB06214CD9BB0053B5B5 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -283,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TT6KKS6MS8;
 				INFOPLIST_FILE = "Wild Fang/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TT6KKS6MS8;
 				INFOPLIST_FILE = "Wild Fang/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
