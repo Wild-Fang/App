@@ -34,7 +34,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
     }
-
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        previewLayer.frame = self.previewView.bounds;
+        gradientLayer.frame = self.previewView.bounds;
+        
+        previewLayer?.connection?.videoOrientation = .portrait
+    }
 
 }
 
