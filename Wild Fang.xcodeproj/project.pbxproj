@@ -15,6 +15,7 @@
 		68D5BB0A214CDE7F0053B5B5 /* AVCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BB09214CDE7F0053B5B5 /* AVCapture.swift */; };
 		68D5BB0C214D394E0053B5B5 /* AVSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BB0B214D394E0053B5B5 /* AVSetup.swift */; };
 		68D5BB0E214D399A0053B5B5 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BB0D214D399A0053B5B5 /* SqueezeNet.mlmodel */; };
+		68D5BB10214D3D0B0053B5B5 /* Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BB0F214D3D0B0053B5B5 /* Handler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		68D5BB09214CDE7F0053B5B5 /* AVCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCapture.swift; sourceTree = "<group>"; };
 		68D5BB0B214D394E0053B5B5 /* AVSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVSetup.swift; sourceTree = "<group>"; };
 		68D5BB0D214D399A0053B5B5 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
+		68D5BB0F214D3D0B0053B5B5 /* Handler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			children = (
 				68D5BB09214CDE7F0053B5B5 /* AVCapture.swift */,
 				68D5BB0B214D394E0053B5B5 /* AVSetup.swift */,
+				68D5BB0F214D3D0B0053B5B5 /* Handler.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68D5BB10214D3D0B0053B5B5 /* Handler.swift in Sources */,
 				68D5BB0C214D394E0053B5B5 /* AVSetup.swift in Sources */,
 				68D5BAF6214CD8E40053B5B5 /* ViewController.swift in Sources */,
 				68D5BB0E214D399A0053B5B5 /* SqueezeNet.mlmodel in Sources */,

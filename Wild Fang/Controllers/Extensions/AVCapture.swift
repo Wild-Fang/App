@@ -20,7 +20,7 @@ extension ViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
         
         var requestOptions:[VNImageOption: Any] = [:]
         
-        if let cameraIntrinsicData = CMGetAttachment(sampleBuffer, kCMSampleBufferAttachmentKey_CameraIntrinsicMatrix, nil) {
+        if let cameraIntrinsicData = CMGetAttachment(sampleBuffer, key: kCMSampleBufferAttachmentKey_CameraIntrinsicMatrix, attachmentModeOut: nil) {
             requestOptions = [.cameraIntrinsics: cameraIntrinsicData]
         }
         
