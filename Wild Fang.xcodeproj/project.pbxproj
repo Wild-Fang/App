@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		686E29692150AB5E0073B83D /* BLTNBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 686E29682150AB5E0073B83D /* BLTNBoard.framework */; };
+		686E296A2150AB5E0073B83D /* BLTNBoard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 686E29682150AB5E0073B83D /* BLTNBoard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		68D5BAF4214CD8E40053B5B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BAF3214CD8E40053B5B5 /* AppDelegate.swift */; };
 		68D5BAF6214CD8E40053B5B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BAF5214CD8E40053B5B5 /* ViewController.swift */; };
 		68D5BAF9214CD8E40053B5B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68D5BAF7214CD8E40053B5B5 /* Main.storyboard */; };
@@ -18,7 +20,24 @@
 		68D5BB10214D3D0B0053B5B5 /* Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BB0F214D3D0B0053B5B5 /* Handler.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		686E296B2150AB5E0073B83D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				686E296A2150AB5E0073B83D /* BLTNBoard.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		686E2966215089B60073B83D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		686E2967215089B70073B83D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		686E29682150AB5E0073B83D /* BLTNBoard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BLTNBoard.framework; path = Carthage/Build/iOS/BLTNBoard.framework; sourceTree = "<group>"; };
 		68D5BAF0214CD8E40053B5B5 /* Wild Fang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wild Fang.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68D5BAF3214CD8E40053B5B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68D5BAF5214CD8E40053B5B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				686E29692150AB5E0073B83D /* BLTNBoard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +67,7 @@
 		68D5BAE7214CD8E40053B5B5 = {
 			isa = PBXGroup;
 			children = (
+				686E29682150AB5E0073B83D /* BLTNBoard.framework */,
 				68D5BAF2214CD8E40053B5B5 /* Wild Fang */,
 				68D5BAF1214CD8E40053B5B5 /* Products */,
 			);
@@ -103,6 +124,7 @@
 				68D5BAEC214CD8E40053B5B5 /* Sources */,
 				68D5BAED214CD8E40053B5B5 /* Frameworks */,
 				68D5BAEE214CD8E40053B5B5 /* Resources */,
+				686E296B2150AB5E0073B83D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -181,6 +203,7 @@
 			children = (
 				68D5BAF8214CD8E40053B5B5 /* Base */,
 				68D5BB06214CD9BB0053B5B5 /* en */,
+				686E2966215089B60073B83D /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -189,6 +212,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				68D5BAFD214CD8E60053B5B5 /* Base */,
+				686E2967215089B70073B83D /* fr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -200,6 +224,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -261,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -318,6 +344,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TT6KKS6MS8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Wild Fang/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -336,6 +366,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TT6KKS6MS8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Wild Fang/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
