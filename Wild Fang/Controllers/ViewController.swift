@@ -28,6 +28,8 @@ class ViewController: UIViewController {
     var recognitionThreshold : Float = 0.25
     
     @IBOutlet weak var previewView: UIView!
+    @IBOutlet weak var shotButton: UIImageView!
+    @IBOutlet weak var flash: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
