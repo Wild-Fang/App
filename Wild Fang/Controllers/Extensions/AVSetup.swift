@@ -23,10 +23,11 @@ extension ViewController {
             // add the preview layer
             previewLayer = AVCaptureVideoPreviewLayer(session: session)
             self.previewView.layer.addSublayer(previewLayer)
+            
             // add a slight gradient overlay so we can read the results easily
             gradientLayer = CAGradientLayer()
             gradientLayer.colors = [
-                UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.7).cgColor,
+                UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.0).cgColor,
                 UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.0).cgColor,
             ]
             gradientLayer.locations = [0.0, 0.3]
